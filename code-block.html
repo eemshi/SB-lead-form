@@ -1,0 +1,230 @@
+<!-- Paste this into Squarespace code block element -->
+
+<style>
+    label {
+        font-weight: bold;
+    }
+
+    input,
+    select {
+        margin-bottom: 0.75em;
+    }
+
+    input[type=submit] {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        padding: 0.75em 1.25em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    textarea {
+        width: 320px;
+    }
+</style>
+
+<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+    <input type=hidden name="oid" value="00Dm00000003SIv">
+    <input type=hidden name="retURL" value="http://www.stemblazers.org/contact">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail" value="sheshayala@gmail.com">    -->
+    <!--  ----------------------------------------------------------------------  -->
+
+    <div style="margin-bottom: 0.75em">
+        <div style="display:inline-block">
+            <label for="first_name">First Name</label><br>
+            <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required /><br>
+        </div>
+        <div style="display:inline-block">
+            <label for="last_name">Last Name</label><br>
+            <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required /><br>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 0.75em">
+        <label>School</label><br>
+        <div style="display: inline-block; margin-right: 1em">
+            <small>For middle and high school students only</small><br>
+            <input id="00N0g000003carX" maxlength="255" name="00N0g000003carX" size="20" type="text" /><br>
+        </div>
+        <div style="display:inline-block">
+            <label>Grade</label><br>
+            <select id="00N0g0000048nNo" name="00N0g0000048nNo" title="Grade">
+                <option value="">N/A</option>
+                <option value="6th Grade">6th Grade</option>
+                <option value="7th Grade">7th Grade</option>
+                <option value="8th Grade">8th Grade</option>
+                <option value="9th Grade (Freshman)">9th Grade (Freshman)</option>
+                <option value="10th Grade (Sophomore)">10th Grade (Sophomore)</option>
+                <option value="11th Grade (Junior)">11th Grade (Junior)</option>
+                <option value="12th Grade (Senior)">12th Grade (Senior)</option>
+                <option value="Other">Other</option>
+            </select><br>
+        </div>
+    </div>
+
+    <label for="company">Company</label> <small>(if applicable)</small><br>
+    <input id="company" maxlength="40" name="company" size="20" type="text" /><br><br>
+
+    <label for="phone">Phone</label><br>
+    <input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+    <label for="email">Email</label><br>
+    <input id="email" maxlength="80" name="email" size="20" type="text" required /><br>
+
+    <!-- Begin {ENGAGEMENT checklist} -->
+    <label>Tell us a little bit about yourself. Are you an existing or potential:</label><br>
+
+    <div class="checkbox">
+        <input type="checkbox" name="00N0g000003VhmY" id="advocate" value="Advocate">
+        Advocate
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="00N0g000003VhmY" id="donor" value="Donor">
+        Donor
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="00N0g000003VhmY" id="educator" value="Educator">
+        Educator
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="00N0g000003VhmY" id="generalVolunteer" value="General Volunteer">
+        General Volunteer
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="00N0g000003VhmY" id="parent" value="Parent">
+        Parent
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="00N0g000003VhmY" id="student" value="Student">
+        Student
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="00N0g000003VhmY" id="other" value="Other">
+        Other
+    </div>
+    <br>
+
+    <!-- Show if {General Volunteer} is selected above -->
+    <div id="volunteerTypes">
+        <label>I'm available to volunteer as:</label>
+
+        <div class="checkbox">
+            <input type="checkbox" name="00N0g000003VhmY" id="chapterFacilitator" value="Chapter Facilitator">
+            Chapter Facilitator
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N0g000003VhmY" id="corporatePartner" value="Corporate Partner">
+            Corporate Partner
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N0g000003VhmY" id="eventHost" value="Event Host">
+            Event Host
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N0g000003VhmY" id="fieldTripHost" value="Field Trip Host">
+            Field Trip Host
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N0g000003VhmY" id="guestSpeaker" value="Guest Speaker">
+            Guest Speaker
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N0g000003VhmY" id="jobShadow" value="Job Shadow">
+            Job Shadow Host
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N0g000003VhmY" id="mentor" value="Mentor">
+            Mentor
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N0g000003VhmY" id="programCoordinator" value="Program Coordinator">
+            Program Coordinator
+        </div>
+        <br>
+
+        <!-- Begin {SKILLS checklist} -->
+        <label>Tell us more about what skills you could bring to STEMblazers:</label><br>
+
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="administrative" value="Administrative">
+            Administrative
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="bookkeeping" value="Bookkeeping">
+            Bookkeeping
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="dataAnalytics" value="Data Analytics">
+            Data Analytics
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="education" value="Education">
+            Education
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="eventPlanning" value="Event Planning">
+            Event Planning
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="fundraising" value="Fundraising">
+            Fundraising
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="grantWriting" value="Grant Writing">
+            Grant Writing
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="marketing" value="Marketing">
+            Marketing
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="projectManagement" value="Project Management">
+            Project Management
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="salesforce" value="Salesforce">
+            Salesforce
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="training" value="Training">
+            Training
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N1I00000B3QtF" id="webDevelopment" value="Web Development">
+            Web Development
+        </div>
+        <br>
+    </div>
+    <!-- End {ENGAGEMENT checklist} -->
+
+    <!-- End {SKILLS checklist} -->
+
+    <label>Message</label><br>
+    <textarea id="00N1I00000B3QtE" name="00N1I00000B3QtE" rows="5" type="text" wrap="soft"></textarea><br>
+
+    <input type="submit" name="submit">
+
+</form>
+
+<script>
+    const generalVolunteer = document.getElementById('generalVolunteer')
+    const volunteerTypes = document.getElementById('volunteerTypes')
+
+    volunteerTypes.style.display = 'none'
+
+    generalVolunteer.addEventListener('click', (e) => {
+        if (volunteerTypes.style.display === 'none') {
+            volunteerTypes.style.display = 'block'
+        } else {
+            volunteerTypes.style.display = 'none'
+        }
+    })
+</script>
