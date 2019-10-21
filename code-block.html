@@ -1,27 +1,49 @@
-<!-- Paste this into Squarespace code block element -->
-
 <style>
     label {
         font-weight: bold;
+        font-size: 14px;
     }
 
     input,
-    select {
+    select,
+    .input-group {
         margin-bottom: 0.75em;
     }
 
+    input[type=text], textarea {
+        padding: 12px;
+        margin: 6px 0 4px;
+        border: 1px solid #ccc;
+        background: #fafafa;
+        color: #000;
+        font-family: sans-serif;
+        font-size: 12px;
+        line-height: normal;
+        box-sizing: border-box;
+        border-radius: 2px;
+    }
+
     input[type=submit] {
-        background-color: black;
-        color: white;
-        border: 1px solid black;
-        padding: 0.75em 1.25em;
+        font-family: proxima-nova;
+        font-weight: 400;
+        font-style: normal;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: 500;
+        letter-spacing: .1em;
+        color: #fff;
+        background-color: #222;
+        padding: 1em 2.5em;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
     }
 
     textarea {
-        width: 320px;
+        width: 500px;
+        height: 200px;
+    }
+
+    .inline {
+        display: inline-block;
     }
 </style>
 
@@ -37,27 +59,27 @@
     <!--  <input type="hidden" name="debugEmail" value="sheshayala@gmail.com">    -->
     <!--  ----------------------------------------------------------------------  -->
 
-    <div style="margin-bottom: 0.75em">
-        <div style="display:inline-block">
-            <label for="first_name">First Name</label><br>
+    <div class="input-group">
+        <div class="inline" style="margin-right: 0.5em">
+            <label for="first_name">First Name *</label><br>
             <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required /><br>
         </div>
-        <div style="display:inline-block">
-            <label for="last_name">Last Name</label><br>
+        <div class="inline">
+            <label for="last_name">Last Name *</label><br>
             <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required /><br>
         </div>
     </div>
 
-    <div style="margin-bottom: 0.75em">
+    <div class="input-group">
         <label>School</label><br>
-        <div style="display: inline-block; margin-right: 1em">
+        <div class="inline" style="margin-right: 1em">
             <small>For middle and high school students only</small><br>
             <input id="00N0g000003carX" maxlength="255" name="00N0g000003carX" size="20" type="text" /><br>
         </div>
-        <div style="display:inline-block">
+        <div class="inline">
             <label>Grade</label><br>
             <select id="00N0g0000048nNo" name="00N0g0000048nNo" title="Grade">
-                <option value="">N/A</option>
+                <option value="">--None--</option>
                 <option value="6th Grade">6th Grade</option>
                 <option value="7th Grade">7th Grade</option>
                 <option value="8th Grade">8th Grade</option>
@@ -73,14 +95,19 @@
     <label for="company">Company</label> <small>(if applicable)</small><br>
     <input id="company" maxlength="40" name="company" size="20" type="text" /><br><br>
 
-    <label for="phone">Phone</label><br>
-    <input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-
-    <label for="email">Email</label><br>
-    <input id="email" maxlength="80" name="email" size="20" type="text" required /><br>
+    <div class="input-group">
+        <div class="inline" style="margin-right: 0.5em">
+            <label for="phone">Phone</label><br>
+            <input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+        </div>
+        <div class="inline">
+            <label for="email">Email *</label><br>
+            <input id="email" maxlength="80" name="email" size="20" type="text" required /><br>
+        </div>
+    </div>
 
     <!-- Begin {ENGAGEMENT checklist} -->
-    <label>Tell us a little bit about yourself. Are you an existing or potential:</label><br>
+    <label>Tell us a little bit about yourself. Are you an existing or potential: *</label><br>
 
     <div class="checkbox">
         <input type="checkbox" name="00N0g000003VhmY" id="advocate" value="Advocate">
@@ -105,10 +132,6 @@
     <div class="checkbox">
         <input type="checkbox" name="00N0g000003VhmY" id="student" value="Student">
         Student
-    </div>
-    <div class="checkbox">
-        <input type="checkbox" name="00N0g000003VhmY" id="other" value="Other">
-        Other
     </div>
     <br>
 
@@ -147,6 +170,10 @@
         <div class="checkbox">
             <input type="checkbox" name="00N0g000003VhmY" id="programCoordinator" value="Program Coordinator">
             Program Coordinator
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="00N0g000003VhmY" id="other" value="Other">
+            Other
         </div>
         <br>
 
@@ -207,7 +234,7 @@
 
     <!-- End {SKILLS checklist} -->
 
-    <label>Message</label><br>
+    <label>Message *</label><br>
     <textarea id="00N1I00000B3QtE" name="00N1I00000B3QtE" rows="5" type="text" wrap="soft"></textarea><br>
 
     <input type="submit" name="submit">
