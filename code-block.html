@@ -1,23 +1,42 @@
 <style>
     label {
-        font-weight: bold;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .input-group, input {
+        margin-bottom: 1em;
+    }
+
+    input {
         font-size: 14px;
     }
 
-    input,
-    select,
-    .input-group {
-        margin-bottom: 0.75em;
+    input[type=checkbox] {
+        margin-right: 5px;
     }
 
-    input[type=text], textarea {
+    select {
+        height: 40px;
+    }
+
+    form {
+        width: 100%;
+        min-width: 280px;
+        max-width: 573px;
+        margin: 0 auto;
+    }
+
+    input[type=text], textarea, select {
+        width: 100%;
+        min-width: 280px;
+        max-width: 572px;
         padding: 12px;
         margin: 6px 0 4px;
         border: 1px solid #ccc;
         background: #fafafa;
         color: #000;
         font-family: sans-serif;
-        font-size: 12px;
         line-height: normal;
         box-sizing: border-box;
         border-radius: 2px;
@@ -25,6 +44,7 @@
 
     input[type=submit] {
         font-family: proxima-nova;
+        font-size: 14px;
         font-weight: 400;
         font-style: normal;
         text-transform: uppercase;
@@ -35,11 +55,7 @@
         text-align: center;
         cursor: pointer;
         outline: none;
-    }
-
-    textarea {
-        width: 500px;
-        height: 200px;
+        border-width: 0;
     }
 
     .inline {
@@ -71,15 +87,14 @@
     </div>
 
     <div class="input-group">
-        <label>School</label><br>
-        <div class="inline" style="margin-right: 1em">
-            <small>For middle and high school students only</small><br>
+        <div class="inline" style="margin-right: 0.5em">
+            <label>School</label> <small>(middle & high school students only)</small><br>
             <input id="00N0g000003carX" maxlength="255" name="00N0g000003carX" size="20" type="text" /><br>
         </div>
         <div class="inline">
             <label>Grade</label><br>
             <select id="00N0g0000048nNo" name="00N0g0000048nNo" title="Grade">
-                <option value="">--None--</option>
+                <option value="">N/A</option>
                 <option value="6th Grade">6th Grade</option>
                 <option value="7th Grade">7th Grade</option>
                 <option value="8th Grade">8th Grade</option>
@@ -92,8 +107,10 @@
         </div>
     </div>
 
-    <label for="company">Company</label> <small>(if applicable)</small><br>
-    <input id="company" maxlength="40" name="company" size="20" type="text" /><br><br>
+    <div class="input-group">
+        <label for="company">Company</label> <small>(if applicable)</small><br>
+        <input id="company" maxlength="40" name="company" size="20" type="text" /><br>
+    </div>
 
     <div class="input-group">
         <div class="inline" style="margin-right: 0.5em">
@@ -104,12 +121,12 @@
             <label for="email">Email *</label><br>
             <input id="email" maxlength="80" name="email" size="20" type="text" required /><br>
         </div>
-    </div>
+    </div><br>
 
     <!-- Begin {ENGAGEMENT checklist} -->
-    <label>Tell us a little bit about yourself. Are you an existing or potential: *</label><br>
+    <label>Tell us a little bit about yourself. Are you an existing or potential: *</label>
 
-    <div class="checkbox">
+    <div class="checkbox" style="margin-top: 7px">
         <input type="checkbox" name="00N0g000003VhmY" id="advocate" value="Advocate">
         Advocate
     </div>
@@ -139,7 +156,7 @@
     <div id="volunteerTypes">
         <label>I'm available to volunteer as:</label>
 
-        <div class="checkbox">
+        <div class="checkbox" style="margin-top: 7px">
             <input type="checkbox" name="00N0g000003VhmY" id="chapterFacilitator" value="Chapter Facilitator">
             Chapter Facilitator
         </div>
@@ -180,7 +197,7 @@
         <!-- Begin {SKILLS checklist} -->
         <label>Tell us more about what skills you could bring to STEMblazers:</label><br>
 
-        <div class="checkbox">
+        <div class="checkbox" style="margin-top: 7px">
             <input type="checkbox" name="00N1I00000B3QtF" id="administrative" value="Administrative">
             Administrative
         </div>
@@ -235,9 +252,10 @@
     <!-- End {SKILLS checklist} -->
 
     <label>Message *</label><br>
-    <textarea id="00N1I00000B3QtE" name="00N1I00000B3QtE" rows="5" type="text" wrap="soft"></textarea><br>
+    <textarea id="00N1I00000B3QtE" name="00N1I00000B3QtE" style="margin-top: 7px" rows="5" type="text" wrap="soft">
+    </textarea><br>
 
-    <input type="submit" name="submit">
+    <input type="submit" name="submit" style="margin-top: 17px">
 
 </form>
 
