@@ -68,13 +68,6 @@
     <input type=hidden name="oid" value="00Dm00000003SIv">
     <input type=hidden name="retURL" value="http://www.stemblazers.org/contact">
 
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-    <!--  these lines if you wish to test in debug mode.                          -->
-    <!--  <input type="hidden" name="debug" value=1>                              -->
-    <!--  <input type="hidden" name="debugEmail" value="sheshayala@gmail.com">    -->
-    <!--  ----------------------------------------------------------------------  -->
-
     <div class="input-group">
         <div class="inline" style="margin-right: 0.5em">
             <label for="first_name">First Name *</label><br>
@@ -123,7 +116,7 @@
         </div>
     </div><br>
 
-    <!-- Begin {ENGAGEMENT checklist} -->
+    <!-- Begin {ENGAGEMENT picklist} -->
     <label>Tell us a little bit about yourself. Are you an existing or potential: *</label>
 
     <div class="checkbox" style="margin-top: 7px">
@@ -152,8 +145,9 @@
     </div>
     <br>
 
-    <!-- Show if {General Volunteer} is selected above -->
-    <div id="volunteerTypes">
+    <div id="volunteerSection">
+        
+        <!-- Begin {VOLUNTEER picklist} -->
         <label>I'm available to volunteer as:</label>
 
         <div class="checkbox" style="margin-top: 7px">
@@ -192,9 +186,10 @@
             <input type="checkbox" name="00N0g000003VhmY" id="other" value="Other">
             Other
         </div>
+        <!-- End {VOLUNTEER picklist} -->
         <br>
 
-        <!-- Begin {SKILLS checklist} -->
+        <!-- Begin {SKILLS picklist} -->
         <label>Tell us more about what skills you could bring to STEMblazers:</label><br>
 
         <div class="checkbox" style="margin-top: 7px">
@@ -245,11 +240,10 @@
             <input type="checkbox" name="00N1I00000B3QtF" id="webDevelopment" value="Web Development">
             Web Development
         </div>
+        <!-- End {SKILLS picklist} -->
         <br>
     </div>
-    <!-- End {ENGAGEMENT checklist} -->
-
-    <!-- End {SKILLS checklist} -->
+    <!-- End {ENGAGEMENT picklist} -->
 
     <label>Message *</label><br>
     <textarea id="00N1I00000B3QtE" name="00N1I00000B3QtE" style="margin-top: 7px" rows="5" type="text" wrap="soft">
@@ -261,15 +255,15 @@
 
 <script>
     const generalVolunteer = document.getElementById('generalVolunteer')
-    const volunteerTypes = document.getElementById('volunteerTypes')
+    const volunteerSection = document.getElementById('volunteerSection')
 
-    volunteerTypes.style.display = 'none'
+    volunteerSection.style.display = 'none'
 
     generalVolunteer.addEventListener('click', (e) => {
-        if (volunteerTypes.style.display === 'none') {
-            volunteerTypes.style.display = 'block'
+        if (volunteerSection.style.display === 'none') {
+            volunteerSection.style.display = 'block'
         } else {
-            volunteerTypes.style.display = 'none'
+            volunteerSection.style.display = 'none'
         }
     })
 </script>
