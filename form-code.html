@@ -1,6 +1,6 @@
 <!-- everything below goes in the Squarespace custom code block -->
 
-<!-- see this code @ https://github.com/eemshi/SB-lead-form -->
+<!-- view this code @ https://github.com/eemshi/SB-lead-form -->
 
 <style>
     label {
@@ -67,7 +67,7 @@
     }
 </style>
 
-<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<form action="https://stemblazers.my.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
     <input type=hidden name="oid" value="00Dm00000003SIv">
     <input type=hidden name="retURL" value="http://www.stemblazers.org/contact-submit">
@@ -118,136 +118,143 @@
             <label for="email">Email *</label><br>
             <input id="email" maxlength="80" name="email" size="20" type="text" required /><br>
         </div>
-    </div><br>
+    </div>
 
-    <!-- Begin {ENGAGEMENT picklist} -->
-    <label>Tell us a little bit about yourself. Are you an existing or potential: *</label>
-
-    <div class="checkbox" style="margin-top: 7px">
-        <input type="checkbox" name="00N0g000003VhmY" id="advocate" value="Advocate">
-        Advocate
-    </div>
-    <div class="checkbox">
-        <input type="checkbox" name="00N0g000003VhmY" id="corporatePartner" value="Corporate Partner">
-        Corporate Partner
-    </div>
-    <div class="checkbox">
-        <input type="checkbox" name="00N0g000003VhmY" id="donor" value="Donor">
-        Donor
-    </div>
-    <div class="checkbox">
-        <input type="checkbox" name="00N0g000003VhmY" id="educator" value="Educator">
-        Educator
-    </div>
-    <div class="checkbox">
-        <input type="checkbox" name="00N0g000003VhmY" id="generalVolunteer" value="General Volunteer">
-        General Volunteer
-    </div>
-    <div class="checkbox">
-        <input type="checkbox" name="00N0g000003VhmY" id="parent" value="Parent">
-        Parent
-    </div>
-    <div class="checkbox">
-        <input type="checkbox" name="00N0g000003VhmY" id="student" value="Student">
-        Student
-    </div>
-    <br>
-
-    <div id="volunteerSection">
-
-        <!-- Begin {VOLUNTEER picklist} -->
-        <label>I'm available to volunteer as:</label>
+    <div style="margin: 2em 0">
+        <!-- Begin {ENGAGEMENT picklist} -->
+        <label>Tell us a little bit about yourself. Are you an existing or potential: *</label><br>
+        <small><i>Check all that apply</i></small>
 
         <div class="checkbox" style="margin-top: 7px">
-            <input type="checkbox" name="00N0g000003VhmY" id="chapterFacilitator" value="Chapter Facilitator">
-            Chapter Facilitator
+            <input type="checkbox" name="00N0g000003VhmY" id="advocate" value="Advocate">
+            Advocate
         </div>
         <div class="checkbox">
-            <input type="checkbox" name="00N0g000003VhmY" id="eventHost" value="Event Host">
-            Event Host
+            <input type="checkbox" name="00N0g000003VhmY" id="corporatePartner" value="Corporate Partner">
+            Corporate Partner
         </div>
         <div class="checkbox">
-            <input type="checkbox" name="00N0g000003VhmY" id="fieldTripHost" value="Field Trip Host">
-            Field Trip Host
+            <input type="checkbox" name="00N0g000003VhmY" id="donor" value="Donor">
+            Donor
         </div>
         <div class="checkbox">
-            <input type="checkbox" name="00N0g000003VhmY" id="guestSpeaker" value="Guest Speaker">
-            Guest Speaker
+            <input type="checkbox" name="00N0g000003VhmY" id="educator" value="Educator">
+            Educator
         </div>
         <div class="checkbox">
-            <input type="checkbox" name="00N0g000003VhmY" id="jobShadow" value="Job Shadow">
-            Job Shadow Host
+            <input type="checkbox" name="00N0g000003VhmY" id="generalVolunteer" value="General Volunteer">
+            General Volunteer
         </div>
         <div class="checkbox">
-            <input type="checkbox" name="00N0g000003VhmY" id="mentor" value="Mentor">
-            Mentor
+            <input type="checkbox" name="00N0g000003VhmY" id="parent" value="Parent">
+            Parent
         </div>
         <div class="checkbox">
-            <input type="checkbox" name="00N0g000003VhmY" id="programCoordinator" value="Program Coordinator">
-            Program Coordinator
+            <input type="checkbox" name="00N0g000003VhmY" id="student" value="Student">
+            Student
         </div>
         <div class="checkbox">
             <input type="checkbox" name="00N0g000003VhmY" id="other" value="Other">
-            Other
+            Other/Not Sure
         </div>
-        <!-- End {VOLUNTEER picklist} -->
-        <br>
 
-        <!-- Begin {SKILLS picklist} -->
-        <label>Tell us more about what skills you could bring to STEMblazers:</label><br>
+        <div id="volunteerSection">
+            <br>
+            <!-- Begin {VOLUNTEER picklist} -->
+            <label>I'm available to volunteer as:</label><br>
+            <small><i>Check all that apply</i></small>
 
-        <div class="checkbox" style="margin-top: 7px">
-            <input type="checkbox" name="00N1I00000B3QtF" id="administrative" value="Administrative">
-            Administrative
+            <div class="checkbox" style="margin-top: 7px">
+                <input type="checkbox" name="00N0g000003VhmY" id="chapterFacilitator" value="Chapter Facilitator">
+                Chapter Facilitator
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N0g000003VhmY" id="eventHost" value="Event Host">
+                Event Host
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N0g000003VhmY" id="fieldTripHost" value="Field Trip Host">
+                Field Trip Host
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N0g000003VhmY" id="guestSpeaker" value="Guest Speaker">
+                Guest Speaker
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N0g000003VhmY" id="jobShadow" value="Job Shadow">
+                Job Shadow Host
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N0g000003VhmY" id="mentor" value="Mentor">
+                Mentor
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N0g000003VhmY" id="programCoordinator" value="Program Coordinator">
+                Program Coordinator
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N0g000003VhmY" id="other" value="Other">
+                Other/Not Sure
+            </div>
+            <!-- End {VOLUNTEER picklist} -->
+            <br>
+
+            <!-- Begin {SKILLS picklist} -->
+            <label>Tell us more about what skills you could bring to STEMblazers:</label><br>
+            <small><i>Check all that apply</i></small>
+
+            <div class="checkbox" style="margin-top: 7px">
+                <input type="checkbox" name="00N1I00000B3QtF" id="administrative" value="Administrative">
+                Administrative
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="bookkeeping" value="Bookkeeping">
+                Bookkeeping
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="dataAnalytics" value="Data Analytics">
+                Data Analytics
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="education" value="Education">
+                Education
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="eventPlanning" value="Event Planning">
+                Event Planning
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="fundraising" value="Fundraising">
+                Fundraising
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="grantWriting" value="Grant Writing">
+                Grant Writing
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="marketing" value="Marketing">
+                Marketing
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="projectManagement" value="Project Management">
+                Project Management
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="salesforce" value="Salesforce">
+                Salesforce
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="training" value="Training">
+                Training
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="00N1I00000B3QtF" id="webDevelopment" value="Web Development">
+                Web Development
+            </div>
+            <!-- End {SKILLS picklist} -->
         </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="bookkeeping" value="Bookkeeping">
-            Bookkeeping
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="dataAnalytics" value="Data Analytics">
-            Data Analytics
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="education" value="Education">
-            Education
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="eventPlanning" value="Event Planning">
-            Event Planning
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="fundraising" value="Fundraising">
-            Fundraising
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="grantWriting" value="Grant Writing">
-            Grant Writing
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="marketing" value="Marketing">
-            Marketing
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="projectManagement" value="Project Management">
-            Project Management
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="salesforce" value="Salesforce">
-            Salesforce
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="training" value="Training">
-            Training
-        </div>
-        <div class="checkbox">
-            <input type="checkbox" name="00N1I00000B3QtF" id="webDevelopment" value="Web Development">
-            Web Development
-        </div>
-        <!-- End {SKILLS picklist} -->
-        <br>
+        <!-- End {ENGAGEMENT picklist} -->
     </div>
-    <!-- End {ENGAGEMENT picklist} -->
 
     <label>Message *</label><br>
     <textarea id="00N1I00000B3QtE" name="00N1I00000B3QtE" style="margin-top: 7px" rows="5" type="text" wrap="soft" required>
